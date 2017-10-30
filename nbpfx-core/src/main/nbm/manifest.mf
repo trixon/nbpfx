@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+OpenIDE-Module-Install: se/trixon/nbpfx/core/Installer.class
+OpenIDE-Module-Localizing-Bundle: se/trixon/nbpfx/Bundle.properties
+XXXOpenIDE-Module-Requires: org.openide.windows.WindowManager
+
