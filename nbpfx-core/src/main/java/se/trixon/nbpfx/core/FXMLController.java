@@ -1,5 +1,5 @@
 /*
- * Copyright 2017 Patrik Karlsson.
+ * Copyright 2019 Patrik Karlström.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -36,6 +36,7 @@ import javax.swing.AbstractAction;
 import javax.swing.JButton;
 import javax.swing.SwingUtilities;
 import org.netbeans.modules.autoupdate.ui.PluginManagerUI;
+import org.netbeans.modules.autoupdate.ui.api.PluginManager;
 
 public class FXMLController implements Initializable {
 
@@ -94,6 +95,7 @@ public class FXMLController implements Initializable {
 
             PluginManagerUI pluginManagerUI = new PluginManagerUI(button);
             swingNode.setContent(pluginManagerUI);
+            PluginManager p;
         });
     }
 
@@ -104,7 +106,7 @@ public class FXMLController implements Initializable {
         alert.setHeaderText(String.format("%s %s", mStage.getTitle(), "v0.0.1"));
         alert.setContentText("Manage NetBeans Plugins from Java FX\n\n"
                 + "Licensed under the Apache License, Version 2.0\n"
-                + "Copyright 2017 Patrik Karlsson");
+                + "Copyright 2019 Patrik Karlström");
         alert.getDialogPane().setExpanded(true);
         alert.showAndWait();
     }

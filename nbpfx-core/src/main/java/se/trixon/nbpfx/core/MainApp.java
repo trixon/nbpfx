@@ -1,5 +1,5 @@
-/*
- * Copyright 2017 Patrik Karlsson.
+/* 
+ * Copyright 2019 Patrik Karlström.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -22,6 +22,7 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import org.openide.LifecycleManager;
 
@@ -44,6 +45,7 @@ public class MainApp extends Application {
         Scene scene = new Scene(root);
 
         stage.setTitle("NBPFX");
+        stage.getIcons().add(new Image("/org/netbeans/core/startup/frame48.gif"));
         stage.setScene(scene);
         stage.show();
         controller.init(stage);
