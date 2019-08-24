@@ -6,11 +6,12 @@
         <groupId>se.trixon.nbpfx</groupId>
         <artifactId>nbpfx-parent</artifactId>
         <version>0.0.1-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <artifactId>nbpfx-app</artifactId>
+    <artifactId>nbpfx</artifactId>
     <packaging>nbm-application</packaging>
-    <name>nbpfx-app</name>
+    <name>nbpfx</name>
 
     <properties>
         <all.clusters>${project.build.directory}/${brandingToken}</all.clusters>
@@ -52,7 +53,7 @@
     <build>
         <plugins>
             <plugin>
-                <groupId>org.codehaus.mojo</groupId>
+                <groupId>org.apache.netbeans.utilities</groupId>
                 <artifactId>nbm-maven-plugin</artifactId>
                 <configuration>
                     <etcConfFile>src/main/resources/nbpfx.conf</etcConfFile>
